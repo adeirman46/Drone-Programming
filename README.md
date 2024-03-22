@@ -3,7 +3,7 @@ Drone programming for computer vision, path planning, and ROS using DJI Tello
 
 ## Path Visualizer
 Generate path visualizer of drone 
-<img src="Images/ObjectDetection1.jpeg" width="500" height="500">
+![Path Visualizer](Images/PathVisualizer.jpeg)
 
 
 ## Object Detection
