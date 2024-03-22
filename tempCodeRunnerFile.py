@@ -1,1 +1,2 @@
-lr, fb, ud, yv
+me = tello.Tello()
+# me.connect()
