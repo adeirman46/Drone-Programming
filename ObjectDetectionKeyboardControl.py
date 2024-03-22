@@ -13,7 +13,7 @@ me = tello.Tello()
 me.connect()
 
 # load the model
-model = YOLO("yolov8n.pt")
+model = YOLO("yolov8m.pt")
 
 # box annotator
 bbox_annotator = sv.BoxAnnotator()
@@ -63,9 +63,9 @@ while True:
     # detect objects
     result = model(img)[0]
     # detection
-    detection = sv.Detections.from_yolov8(result)
+    detection = sv.Detections.from_ultralytics(result)
     # confidence 80%
-    detection = detection[detection.confidence > 0.8]
+    detection = detection[detection.confidence > 0.5]
     labels = [
         result.names[class_id]
         for class_id in detection.class_id
